@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vivoca Daily</title>
+    <meta http-equiv='Content-Security-Policy' content="default-src *; style-src 'self' data: https://fonts.googleapis.com 'unsafe-inline' 'unsafe-eval'">
+    <link href='https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700' type='text/css' rel='stylesheet'>
+    <style>
+      body {
+        display: flex;
+        background: #fdfdfd;
+        height: 100vh;
+        width: 100vw;
+        color: #2f363d;
+        font-size: 1.2rem;
+        font-family: 'Old Standard TT', serif;
+        margin: 0px;
+      }
+      .vocab {
+        width: 48rem;
+        margin: auto;
+      }
+      .vocab-word {
+        text-align: center;
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 1;
+        margin: 1rem 0;
+        color: #199f4b;
+      }
+      .vocab blockquote {
+        text-align: center;
+        font-size: 2rem;
+        font-style: italic;
+        margin: 1.5rem 0 2rem;
+      }
+      .vocab-source {
+        display: inline-block;
+        text-align: center;
+        font-size: 1rem;
+        color: #b0b4bb;
+      }
+      .vocab-definition {
+        margin: 1rem auto;
+        width: 40rem;
+      }
+      .vocab-definition span {
+        color: #199f4b;
+        font-weight: bold;
+      }
+      .vocab hr {
+        border: none;
+        border-top: 1px solid #b0b4bb;
+        outline: none;
+        margin: 1rem auto;
+        width: 2rem;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background: #0d1117;
+          color: #ecf2f8;
+        }
+        .vocab-word, .vocab-definition span {
+          color: #7ce38b;
+        }
+        .vocab-source {
+          color: #89929b;
+        }
+        .vocab hr {
+          border-top: 1px solid #89929b;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class='vocab'>
+      <p class='vocab-loading'>
+        Loading word list&hellip;
+      </p>
+    </div>
+    <script src='main.js'></script>
+  </body>
+</html>
